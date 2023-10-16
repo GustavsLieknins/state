@@ -1,0 +1,13 @@
+body
+{
+    background-image: url("C:\laragon\www\state-ipb22\state\public\gurkisi.jpg");
+}
+h1,button
+{
+    font-family: 'Pixelify Sans', sans-serif;
+}
+h1
+{
+    font-size: 50px;
+    color: gold;
+}

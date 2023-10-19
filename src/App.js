@@ -3,31 +3,36 @@ import React, { useState } from 'react';
 import Style from "./global.css";
 
 function App() {
-  const [count, setCount] = useState([]);
-  const thing = count.map((img,i) => {
-    return <img src={img} key={i}  width="60px" height="160px"/>;
-  });
-  const length = count.length;
-  console.log(length)
+  const [count, setCount] = useState(0);
 
+  const [ratioChange, setRatioChange] = useState(1);
+  // const thing = count.map((img,i) => {
+  //   return <img src={img} key={i}  width="60px" height="160px"/>;
+  // });
+  // const length = count.length;
+  // console.log(length)
+  function handleRatioChange(e){
+    setRatioChange(e.target.value);
+  }
   // function removeLode(){
   //   let thingwithnolast = thing.pop();
   //   const things = count.map(img => {
   //   });
   // }
-    const removeLode = () => {
-      const newCount = [...count];
-      newCount.pop();
-      setCount(newCount);
-  };
+  //   const removeLode = () => {
+  //     const newCount = [...count];
+  //     newCount.pop();
+  //     setCount(newCount);
+  // };
   return (
     <>
     <h1>Gusis OG lode sip count</h1>
-    <button  onClick={() => setCount([...count, "./lode2.png"])}>Lode + count</button>
-    <button  onClick={removeLode}>Lode - count</button>
+    <input type="number" value={ratioChange} onChange={handleRatioChange}/>
+    {/* <button  onClick={() => setCount([...count, "./lode2.png"])}>Lode + count</button>
+    <button  onClick={removeLode}>Lode - count</button> */}
     <br></br>
     <br></br>
-    {thing}
+    {ratioChange}
     </>
   );
 }

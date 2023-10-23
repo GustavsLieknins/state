@@ -2,10 +2,11 @@ import logo from './logo.svg';
 import React, { useState } from 'react';
 import Style from "./global.css";
 
-function Counter() {
+function Counter(props) {
   const [count, setCount] = useState(0);
+  
 
-  const [ratioChange, setRatioChange] = useState(1);
+  const [ratioChange, setRatioChange] = useState(props.ratio);
   // const thing = count.map((img,i) => {
   //   return <img src={img} key={i}  width="60px" height="160px"/>;
   // });
@@ -34,8 +35,8 @@ function Counter() {
     <>
     <h1>Gusis OG lode sip count</h1>
     <input type="number" value={ratioChange} onChange={handleRatioChange}/>
-    <button value={ratioChange} onClick={adder}>Wsp {ratioChange}</button>
-    <button value={ratioChange} onClick={minuser}>Wsp {ratioChange}</button>
+    <button value={count} onClick={adder}>Wsp {ratioChange}</button>
+    <button value={count} onClick={minuser}>Wsp {ratioChange}</button>
     {/* <button  onClick={() => setCount([...count, "./lode2.png"])}>Lode + count</button>
     <button  onClick={removeLode}>Lode - count</button> */}
     <br></br>

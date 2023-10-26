@@ -19,7 +19,7 @@ function App() {
   //   "Receive Offers"
   // }]
 
-  // const labelsAndBoooleans = [{label: “Agree to the Policy”, check: true}, {label: “Receive Offers”, check: false}]
+  const labelsAndBoooleans = [{label: 'Agree to the Policy', check: true}, {label: 'Receive Offers', check: false}]
   const nameri = names.map((name, i) => {
     return <Name value={name} valuee={name}/>
   })

@@ -10,7 +10,7 @@ function LabaledCheck(props) {
   const [count, setCount] = useState(props.boolean);
   return (
     <>
-    <lable name={props.name}>{props.name}</lable>
+    <label name={props.name}>{props.name}</label>
     <input name={props.name} type="checkbox" defaultChecked={count} onChange={handleOnChange} />
     </>
   );

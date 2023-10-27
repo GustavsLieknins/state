@@ -36,9 +36,12 @@ function App() {
   });
   return (
     <>
-      {/* {nameri} */}
-      {/* {ratioeri} */}
-      {/* {checkboxiyes} */}
+      {nameri}
+      <br></br>
+      {ratioeri}
+      <br></br>
+      {checkboxiyes}
+      <br></br>
       {funnyThings}
       <br></br>
       

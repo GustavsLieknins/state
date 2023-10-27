@@ -9,7 +9,7 @@ function handleOnChange(){
 const [count, setCount] = useState(props.boolean);
   return (
     <>
-    <lable name={props.name}></lable>
+    <label name={props.name}></label>
     <input name={props.name} type="checkbox" checked={count} onChange={handleOnChange} />
     </>
   );
